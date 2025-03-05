@@ -29,6 +29,12 @@ app.get('/tasks', (req, res) => {
     res.json(tasks);
 });
 
+// Get all tasks
+app.get('/tasks/:id', (req, res) => {
+    const tasks = readTasks();
+    res.json(tasks);
+});
+
 // Add a new task
 app.post('/tasks', (req, res) => {
     const tasks = readTasks();
