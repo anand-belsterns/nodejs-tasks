@@ -1,1 +1,1 @@
-const greet = "Hello World!";
+const randomValue = `Hello from index.js file`
